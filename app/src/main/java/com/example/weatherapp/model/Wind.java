@@ -1,4 +1,4 @@
-package com.example.weatherapp.Model;
+package com.example.weatherapp.model;
 
 public class Wind {
     private double speed;

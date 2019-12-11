@@ -1,8 +1,7 @@
-package com.example.weatherapp.Model;
+package com.example.weatherapp.model;
 
 public class Sys {
-    private int type;
-    private int id;
+    private double message;
     private String country;
     private int sunrise;
     private int sunset;
@@ -10,20 +9,12 @@ public class Sys {
     public Sys() {
     }
 
-    public int getType() {
-        return type;
+    public double getMessage() {
+        return message;
     }
 
-    public void setType(int type) {
-        this.type = type;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    public void setMessage(double message) {
+        this.message = message;
     }
 
     public String getCountry() {

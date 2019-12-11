@@ -1,23 +1,20 @@
-package com.example.weatherapp.Model;
+package com.example.weatherapp.model;
 
 import java.util.List;
 
 public class WeatherResult {
-
-        private Coord coord;
-        private List<Weather> weather;
-        private String base;
-        private Main main;
-        private int  visibility;
-        private Wind wind;
-        private Clouds clouds;
-        private int dt;
-        private Sys sys;
-        private int timezone;
-        private int id;
-        private String name;
-        private int cod;
-
+    private Coord coord;
+    private List<Weather> weather;
+    private String base;
+    private Main main;
+    private Wind wind;
+    private Rain rain;
+    private Clouds clouds;
+    private int dt;
+    private Sys sys;
+    private int id;
+    private String name;
+    private int cod;
 
     public WeatherResult() {
     }
@@ -54,20 +51,20 @@ public class WeatherResult {
         this.main = main;
     }
 
-    public int getVisibility() {
-        return visibility;
-    }
-
-    public void setVisibility(int visibility) {
-        this.visibility = visibility;
-    }
-
     public Wind getWind() {
         return wind;
     }
 
     public void setWind(Wind wind) {
         this.wind = wind;
+    }
+
+    public Rain getRain() {
+        return rain;
+    }
+
+    public void setRain(Rain rain) {
+        this.rain = rain;
     }
 
     public Clouds getClouds() {
@@ -92,14 +89,6 @@ public class WeatherResult {
 
     public void setSys(Sys sys) {
         this.sys = sys;
-    }
-
-    public int getTimezone() {
-        return timezone;
-    }
-
-    public void setTimezone(int timezone) {
-        this.timezone = timezone;
     }
 
     public int getId() {
