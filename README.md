@@ -1,1 +1,2 @@
-Приложение погода для android
+WheatherAPP
+Погода на android
